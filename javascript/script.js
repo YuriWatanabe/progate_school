@@ -1,5 +1,6 @@
 $(function(){
 
+	/*3.学習言語ホバー機能*/
 	$('.languages-box').hover(
 	function() {
 		$(this).find('p').fadeIn();
@@ -9,6 +10,7 @@ $(function(){
 	});
 
 
+	/*2.「もっと詳しく」ボタン*/
 	$('#read-more').click(
 	function() {
 		if($(this).hasClass('active')) {
@@ -21,6 +23,8 @@ $(function(){
 		}
 	});
 
+
+	/*1.ヘッダーのスクロールナビ*/
 	$('a[href^=#]').click(function(){ 
         var speed = 500;
         var href= $(this).attr("href"); 
@@ -29,6 +33,25 @@ $(function(){
         $("html, body").animate({scrollTop:position}, speed, "swing");
         return false;
     });
+
+
+	/*6.コラム画像ホバー機能*/
+    $('.column-image').hover(
+    function(){
+    	$(this).addClass('zoom');
+    	$(this).find('.zoom-black').fadeIn();
+    },
+    function(){
+    	$(this).removeClass('zoom');
+    	$(this).find('.zoom-black').fadeOut();
+    });
+
+
+    /*.*/
+    
+
+
+
 
 
 });
