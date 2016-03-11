@@ -47,28 +47,29 @@ $(function(){
     });
 
 
-    /*7.コラム絞り込み(動かない･･)*/
+    /*7.コラム絞り込み*/
     $(".filter-item").click(function() {
         var tags = $(this).attr('id');
         $(".filter-item").removeClass('active');
         $(this).addClass('active');
 
-        $(".column-box-wrapper div").hide();
-        if(tags == 'column') {
-            $(".column-box-wrapper .column").show();
-        } else if(tags == 'tip') {
-            $(".column-box-wrapper .tip").show();
+        if(tags == 'all') {
+            $(".column-box").show();
+        } else if(tags == 'column') {
+            $('.column-box-wrapper .column').show();
+            $('.column-box-wrapper .tip').hide();
         } else {
-            $(".column-box-wrapper div").show();
+            $('.column-box-wrapper .tip').show();
+            $('.column-box-wrapper .column').hide();
         }
     });
 
-    /*4.申し込みモーダル(タイトル表示されない･･)*/
+    /*4.申し込みモーダル*/
     $('.btn-pricing').click(function() {
     	$('#apply-modal').fadeIn();
-    	var title = $('#' + id).find('h2').text();
     	var id = $(this).parents('.price-column').attr('id');
-    	$('#corse-select').val(id);
+    	var title = $('#' + id).find('h2').text();
+    	$('#course-select').val(id);
     	$('#apply-form').find('h2').text('【' + title + '】に申し込む');
     });
 
