@@ -77,6 +77,8 @@ $(function(){
     	$('#apply-modal').fadeOut();
     });
 
+    /*8.フォーム機能*/
+
 
 
 

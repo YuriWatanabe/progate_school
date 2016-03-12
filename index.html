@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Progate School</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">s
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -199,28 +199,55 @@
         </div>
       </div>
     </div>
+
     <!-- Mentors -->
+    <!-- data-ride="carousel"を入れると自動的にスライドが開始される-->
+
+    <div id="carousel_sample" class="carousel slide" data-ride="carousel">
+
+    <!-- 中央に表示される丸いボタン -->
+    <ol class="carousel-indicators">
+
+    <li data-target="#carousel_sample" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel_sample" data-slide-to="1" class=""></li>
+    <li data-target="#carousel_sample" data-slide-to="2" class=""></li>
+
+  </ol>
+  <!-- ここからCarouselの中身 -->
+  <div class="carousel-inner">
+
     <div id="mentors" class="mentors-section">
-      <div class="container">
+  
         <div class="section-title">
           <h3>メンター紹介</h3>
         </div>
         <div class="item mentor-box active">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_1.jpg" class="mentor-image">
+          <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_1.jpg" class="mentor-image">
           <h4>プログラミングサークルでの活動や受託を通じてスキルを磨く。その後は複数のスタートアップに協力しながらプログラミングを教えるようになり、これをオンラインのサービスとして提供したいと思い、2014年7月に株式会社Progateを創業、現代表取締役。</h4>
           <p>-加藤将倫</p>
         </div>
         <div class="item mentor-box">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_2.jpg" class="mentor-image">
+          <img data-src="holder.js/900x500/auto/#666:#444/text:Second slide" src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_2.jpg" class="mentor-image">
           <h4>３年生の秋にエンジニアを集めるために東大プログラミングサークル「ZEROXONE」をたちあげる。自分の人生はプログラミングを身につけたことによって劇的に変わりました。みんなにも同じ体験をしてもらいたくてProgateを作っています！ </h4>
           <p>-村井謙太</p>
         </div>
         <div class="item mentor-box">
-          <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_3.jpg" class="mentor-image">
+          <img  src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/mentors/mentor_3.jpg" class="mentor-image">
           <h4>ProgateではUI/UXを担当。ユーザーに夢中で楽しんでもらえるようなサービス設計、学びによって人生を豊かにできるようなサービスを目指し、日々プロダクト改善に取り組んでいる。テクノロジー・デザイン・ビジネスの分野で、領域横断的に活動し、人々がワクワクして止まないモノを生み出せる人間で在りたいと思う。 </h4>
           <p>-神田美智</p>
         </div>
+
       </div>
+      </div>
+
+      <!-- ページ送りボタン、ここもCarouselのid名を合わせる -->
+    <a class="left carousel-control" href="#carousel_sample" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel_sample" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
     </div>
     <!-- Message -->
     <div class="message-section">
@@ -365,9 +392,8 @@
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="javascript/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </body>
 </html>
